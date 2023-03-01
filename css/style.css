@@ -3,6 +3,7 @@
 
 :root {
   --color-white-main: #FFFFFF;
+  --color-white-second: #baa9a9a8;
   --color-black-main: black;
   --color-brown-light: #99862A;
   --color-brown-dark: #695909;
@@ -106,12 +107,12 @@ body {
   background: url(/images/winebottles.png)0 0 no-repeat;
   background-size: cover;
   height: fit-content;
+  padding: 30px 405px 150px 405px;
 }
 
 .first-block {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   max-width: 1110px;
   font-family: "Montserrat", sans-serif;
 }
@@ -123,22 +124,22 @@ body {
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
-  padding: 30px 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .navbar {
   display: flex;
-  margin-bottom: 583px;
 }
 
 .navbar__item {
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 21px;
   text-align: center;
   color: var(--color-white-main);
   border: solid 1px var(--color-white-main);
   padding: 14px 104px;
+  min-width: 277.5px;
 }
 
 .navbar__item:last-child,
@@ -147,10 +148,35 @@ body {
   border-left: 0px;
 }
 
+.navbar__item:after {
+  content: "";
+  margin-top: 5px;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: var(--color-white-second);
+  transition: width 0.4s ease;
+}
+
+.navbar__item:hover:after,
+.navbar__item:focus:after,
+.navbar__item:active:hover {
+  width: 100%;
+}
+
+.navbar__item:hover,
+.navbar__item:focus,
+.navbar__item:active {
+  color: var(--color-white-second);
+  font-size: 16px;
+  padding: 10px 100px;
+}
+
 .buttons__first-block {
   display: flex;
   gap: 30px;
-  margin: 0 auto 150px auto;
+  justify-content: center;
+  margin-top: 583px;
 }
 
 .btn {
@@ -162,11 +188,10 @@ body {
   color: var(--color-white-main);
   background-color: var(--color-brown-light);
   padding: 15px 30px;
-  transition-duration: 2s;
+  transition-duration: 1.5s;
 }
 
 .wine__map:hover,
-
 .degustation:hover {
   background-color: var(--color-brown-dark);
   color: var(--color-black-main);
