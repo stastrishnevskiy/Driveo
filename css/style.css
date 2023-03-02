@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+:root {
+  --color-white-main: #FFFFFF;
+  --color-white-second: #baa9a9a8;
+  --color-white-dark: #C4C4C4;
+  --color-black-main: black;
+  --color-black-second: #282828;
+  --color-brown-light: #99862A;
+  --color-brown-dark: #695909;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -88,4 +98,140 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.novelty-block {
+  padding: 80px 405px;
+  background: #E6E3C4;
+  max-width: 1920px;
+}
+
+.novelty__container {
+  border-top: 1px solid #998431;
+  border-bottom: 1px solid #998431;
+  display: flex;
+  max-width: 1110px;
+}
+
+.novelty__content {
+  max-width: 445px;
+  font-family: 'Montserrat';
+  margin-right: 125px;
+  color: var(--color-black-second);
+}
+
+.title__novelty__content {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 60px;
+}
+
+.subtitle__novelty__content,
+.hr__novelty-block,
+.text__novelty__content {
+  margin-top: 30px;
+}
+
+
+.subtitle__novelty__content {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.hr__novelty-block {
+  background: var(--color-black-second);
+  width: 160px;
+
+}
+
+.text__novelty__content {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+
+.wine__types {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.year {
+  padding: 31px 24px 26px 24px;
+  border-right: 1px solid #282828;
+  font-size: 14px;
+  line-height: 21px;
+  border-bottom: 1px solid var(--color-black-second);
+  display: table-cell;
+}
+
+.name {
+  padding: 10px 0 15px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-bottom: 1px solid var(--color-black-second);
+  display: table-cell;
+}
+
+.playfair {
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.end__table {
+  border-bottom: none;
+}
+
+.btn__novelty__content {
+  padding: 15px 30px;
+  background-color: #998431;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-white-main);
+  transition-duration: 1s;
+
+}
+
+.btn__novelty__content:hover {
+  background-color: #d2bd68;
+  color: var(--color-black-second);
+  border-radius: 50px;
+}
+
+.btn__novelty__content:visited {
+  opacity: 0.8;
+}
+
+.images__novelty-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 0;
+  justify-content: right;
+}
+
+.glass__img {
+  max-width: 540px;
+  max-height: 500px;
+}
+
+.bottles__first__img {
+  max-width: 255px;
+  max-height: 228px;
+}
+
+.bottles__second__img {
+  max-width: 255px;
+  max-height: 228px;
+
 }
