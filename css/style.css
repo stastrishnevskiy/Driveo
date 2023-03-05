@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+:root {
+  --color-white-main: #FFFFFF;
+  --color-white-second: #baa9a9a8;
+  --color-white-dark: #C4C4C4;
+  --color-black-main: black;
+  --color-black-second: #282828;
+  --color-brown-light: #99862A;
+  --color-brown-dark: #695909;
+  --color-brown-footer: #998431;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -88,4 +99,103 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-brown-footer);
+  max-width: 1920px;
+  padding: 50px 405px;
+  color: var(--color-white-main);
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Montserrat";
+}
+
+.navbar__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 1px solid var(--color-white-main);
+  border-bottom: 1px solid var(--color-white-main);
+  padding: 20px 0 19px 0px;
+
+}
+
+.footer__item {
+  color: var(--color-white-main);
+  transition-duration: 700ms;
+}
+
+.footer__item:hover {
+  color: var(--color-black-second);
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.contacts__footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-white-main);
+}
+
+.boutique {
+  padding: 19px 55px 20px 92px;
+  text-transform: uppercase;
+}
+
+.number {
+  padding: 19px 58px 20px 60px;
+}
+
+.social {
+  padding: 19px 64px 20px 58px;
+}
+
+.boutique,
+.number,
+.social {
+  border-right: 1px solid var(--color-white-main);
+}
+
+
+.btn__youtube,
+.btn__vk,
+.btn__facebook {
+  background: transparent;
+}
+
+.btn__youtube img {
+  max-width: 22px;
+  margin-right: 36px;
+}
+
+.btn__vk img {
+  max-width: 24px;
+  margin-right: 42px;
+}
+
+.btn__facebook img {
+  max-width: 10px;
+}
+
+.web {
+  padding: 19px 91px 20px 58px;
+}
+
+.web a {
+  color: var(--color-white-main);
+  text-transform: uppercase;
+  transition-duration: 700ms;
+}
+
+.web a:hover {
+  color: var(--color-black-second);
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
 }
