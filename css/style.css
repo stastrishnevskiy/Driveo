@@ -9,6 +9,9 @@
   --color-black-second: #282828;
   --color-brown-light: #99862A;
   --color-brown-dark: #695909;
+  --color-yellow-main: #d2bd68;
+  --color-yellow-light: #E6E3C4;
+  --color-yellow-dark: #998431;
 }
 
 * {
@@ -100,70 +103,73 @@ h6 {
   font-weight: 400;
 }
 
-body {
+.wrapper {
   max-width: 1920px;
   margin: 0 auto;
 }
 
 .novelty-block {
-  padding: 80px 405px;
-  background: #E6E3C4;
-  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background: var(--color-yellow-light);
 }
 
-.novelty__container {
-  border-top: 1px solid #998431;
-  border-bottom: 1px solid #998431;
+.novelty-block__content {
+  border-top: 1px solid var(--color-yellow-dark);
+  border-bottom: 1px solid var(--color-yellow-dark);
   display: flex;
   max-width: 1110px;
+  gap: 125px;
+  padding: 60px 0px;
 }
 
-.novelty__content {
-  max-width: 445px;
+.novelty-block__info {
+  max-width: 40.09%;
+  flex-basis: 40.09%;
   font-family: 'Montserrat';
-  margin-right: 125px;
   color: var(--color-black-second);
 }
 
-.title__novelty__content {
+.novelty-block__title {
   font-size: 16px;
   line-height: 24px;
-  margin-top: 60px;
 }
 
-.subtitle__novelty__content,
-.hr__novelty-block,
-.text__novelty__content {
+.novelty-block__subtitle,
+.novelty-block__line,
+.novelty-block__text {
   margin-top: 30px;
 }
 
 
-.subtitle__novelty__content {
+.novelty-block__subtitle {
   font-family: 'Playfair Display';
   font-size: 36px;
   line-height: 54px;
 }
 
-.hr__novelty-block {
+.novelty-block__line {
   background: var(--color-black-second);
   width: 160px;
-
+  height: 1px;
 }
 
-.text__novelty__content {
+.novelty-block__text {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 30px;
 }
 
-.wine__types {
+.wine__types__table {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .year {
   padding: 31px 24px 26px 24px;
-  border-right: 1px solid #282828;
+  border-right: 1px solid var(--color-black-second);
   font-size: 14px;
   line-height: 21px;
   border-bottom: 1px solid var(--color-black-second);
@@ -178,7 +184,7 @@ body {
   display: table-cell;
 }
 
-.playfair {
+.text__font__playfair {
   font-family: 'Playfair Display';
   font-weight: 600;
   font-size: 18px;
@@ -189,49 +195,52 @@ body {
   border-bottom: none;
 }
 
-.btn__novelty__content {
+.novelty-block__btn {
   padding: 15px 30px;
-  background-color: #998431;
+  background-color: var(--color-yellow-dark);
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--color-white-main);
   transition-duration: 1s;
 
 }
 
-.btn__novelty__content:hover {
-  background-color: #d2bd68;
+.novelty-block__btn:hover {
+  background-color: var(--color-yellow-main);
   color: var(--color-black-second);
   border-radius: 50px;
 }
 
-.btn__novelty__content:visited {
+.novelty-block__btn:visited {
   opacity: 0.8;
 }
 
-.images__novelty-block {
+.novelty-block__images {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 60px 0;
-  justify-content: right;
+  flex-basis: 48.65%;
+  max-width: 48.65%;
 }
 
 .glass__img {
-  max-width: 540px;
+  flex-basis: 100%;
+  max-width: 100%;
   max-height: 500px;
 }
 
 .bottles__first__img {
-  max-width: 255px;
+  flex-basis: 47.22%;
+  max-width: 47.22%;
   max-height: 228px;
 }
 
 .bottles__second__img {
-  max-width: 255px;
+  flex-basis: 47.22%;
+  max-width: 47.22%;
   max-height: 228px;
 
 }
