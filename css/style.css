@@ -111,40 +111,39 @@ body {
   background-color: var(--color-black-second);
 }
 
-.best__wine__content {
+.best__wine-block__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border: 3px solid var(--color-white-dark);
   padding: 60px 187px 60px 187px;
-  margin: 0 auto;
   color: var(--color-white-main);
   max-height: 656px;
 }
 
-.best__wine__title {
+.best__wine-block__title {
   font-family: 'Playfair Display', sans-serif;
   font-size: 36px;
   line-height: 54px;
   font-weight: 600;
 }
 
-hr {
+.best__wine-block__line {
   width: 160px;
-  height: 1px;
-  margin: 40px auto 0 auto;
   background-color: var(--color-white-main);
+  margin: 40px auto 0 auto;
+  padding-top: 1px;
 }
 
-.best__wine__text {
+.best__wine-block__text {
   margin-top: 40px;
   text-align: center;
   font-family: 'Montserrat';
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
 .wine__glass {
-  width: 160px;
+  max-width: 160px;
   margin: 50px auto 0 auto;
 }
