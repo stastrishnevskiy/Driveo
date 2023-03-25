@@ -107,7 +107,51 @@ h6 {
   background: url(/images/winebottles.png)0 0 no-repeat;
   background-size: cover;
   height: fit-content;
+  background-position: center;
+  width: 100%;
   padding: 30px 405px 150px 405px;
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .background__first-block {
+    padding: 30px 200px 150px 200px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .background__first-block {
+    padding: 30px 100px 150px 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background__first-block {
+    padding: 30px 80px 120px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background__first-block {
+    padding: 30px 50px 100px 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .background__first-block {
+    padding: 30px 30px 80px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background__first-block {
+    padding: 30px 80px 50px 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .background__first-block {
+    padding: 30px 60px 50px 60px;
+  }
 }
 
 .first-block {
@@ -115,6 +159,20 @@ h6 {
   flex-direction: column;
   max-width: 1110px;
   font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .first-block {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .first-block {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .first-block__contacts {
@@ -127,8 +185,24 @@ h6 {
   margin-bottom: 20px;
 }
 
+@media (max-width: 480px) {
+  .first-block__contacts {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
 .navbar {
   display: flex;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
 }
 
 .navbar__item {
@@ -142,10 +216,65 @@ h6 {
   min-width: 277.5px;
 }
 
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .navbar__item {
+    flex: 0 1 25%;
+    min-width: fit-content;
+    padding: 14px 0px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navbar__item {
+    min-width: fit-content;
+    flex: 0 1 25%;
+    padding: 14px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__item {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar__item {
+    flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__item {
+    flex: 0 1 100%;
+    border-right: 0px;
+    border-left: 0px;
+  }
+}
+
 .navbar__item:last-child,
 .navbar__item:first-child {
   border-right: 0px;
   border-left: 0px;
+}
+
+@media (max-width: 640px) {
+
+  .navbar__item:last-child,
+  .navbar__item:first-child {
+    border-right: 1px solid var(--color-white-main);
+    border-left: 1px solid var(--color-white-main);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .navbar__item:last-child,
+  .navbar__item:first-child {
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+  }
 }
 
 .navbar__item:after {
@@ -179,6 +308,38 @@ h6 {
   margin-top: 583px;
 }
 
+@media (max-width: 1200px) {
+  .first-block__buttons {
+    margin-top: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-block__buttons {
+    margin-top: 350px;
+  }
+}
+
+@media (max-width: 640px) {
+  .first-block__buttons {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-block__buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-block__buttons {
+    margin-top: 100px;
+  }
+}
+
 .btn {
   font-size: 16px;
   font-weight: 500;
@@ -189,6 +350,12 @@ h6 {
   background-color: var(--color-brown-light);
   padding: 15px 30px;
   transition-duration: 1.5s;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 13px 25px;
+  }
 }
 
 .wine__map:hover,
