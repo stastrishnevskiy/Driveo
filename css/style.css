@@ -100,11 +100,6 @@ h6 {
   font-weight: 400;
 }
 
-body {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .form-block {
   background-color: var(--color-black-second);
   position: relative;
@@ -112,16 +107,175 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1707px) {
+  .form-block {
+    padding: 129px 300px 100px 300px;
+  }
+}
+
+@media (max-width: 1536px) {
+  .form-block {
+    padding: 100px 180px 80px 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-block {
+    padding: 80px 100px 60px 100px;
+  }
+}
+
+@media (max-width: 878px) {
+  .form-block {
+    padding: 80px 60px 60px 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .form-block {
+    padding: 50px 50px 40px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-block {
+    padding: 30px 30px 20px 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form-block {
+    padding: 20px 10px 15px 10px;
+  }
+}
+
 .grape__img {
   position: absolute;
   top: 60px;
-  left: 352px;
+}
+
+@media (max-width: 1707px) {
+  .grape__img {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1536px) {
+  .grape__img {
+    top: 40px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .grape__img {
+    top: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grape__img {
+    width: 18%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grape__img {
+    top: 35px;
+  }
+}
+
+@media (max-width: 878px) {
+  .grape__img {
+    top: 35px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grape__img {
+    top: 25px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .grape__img {
+    top: 0px;
+    left: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .grape__img {
+    width: 15%;
+    left: 0px;
+  }
 }
 
 .barrel__img {
   position: absolute;
   top: 64px;
   right: 352px;
+}
+
+@media (max-width: 1707px) {
+  .barrel__img {
+    width: 15%;
+    right: 300px;
+  }
+}
+
+@media (max-width: 1536px) {
+  .barrel__img {
+    top: 40px;
+    right: 180px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .barrel__img {
+    top: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .barrel__img {
+    width: 18%;
+    right: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .barrel__img {
+    top: 35px;
+  }
+}
+
+@media (max-width: 878px) {
+  .barrel__img {
+    top: 35px;
+    right: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .barrel__img {
+    top: 25px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .barrel__img {
+    top: 4px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .barrel__img {
+    width: 15%;
+    right: 0px;
+  }
 }
 
 .form__title {
@@ -132,19 +286,113 @@ body {
   line-height: 54px;
   font-weight: 600;
   color: var(--color-white-main);
-  max-width: 490px;
   padding: 0 50px;
 }
 
+@media (max-width: 1706px) {
+  .form__title {
+    padding: 0 30px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1536px) {
+  .form__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form__title {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 878px) {
+  .form__title {
+    padding: 0 15px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .form__title {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__title {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form__title {
+    font-size: 18px;
+  }
+}
 
 .form__content {
   padding: 0 285px 80px 285px;
+  width: 100%;
   border: 3px solid var(--color-white-dark);
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   font-family: 'Montserrat';
   color: var(--color-white-main);
+}
+
+@media (max-width: 1920px) {
+  .form__content {
+    padding: 0 220px 80px 220px;
+  }
+}
+
+@media (max-width: 1706px) {
+  .form__content {
+    padding: 0 130px 70px 130px;
+  }
+}
+
+@media (max-width: 1536px) {
+  .form__content {
+    padding: 0 80px 60px 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form__content {
+    padding: 0 50px 50px 50px;
+  }
+}
+
+@media (max-width: 878px) {
+  .form__content {
+    padding: 0 30px 30px 30px;
+    border: 2px solid var(--color-white-dark);
+  }
+}
+
+@media (max-width: 480px) {
+  .form__content {
+    padding: 0 10px 10px 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form__content {
+    padding: 0 5px 10px 5px;
+  }
 }
 
 .form__hr {
@@ -154,11 +402,49 @@ body {
   margin: 40px auto 0 auto;
 }
 
+@media (max-width: 480px) {
+  .form__hr {
+    margin: 20px auto 0 auto;
+    width: 70px;
+  }
+}
+
 .form__text p {
   margin: 40px auto 0 auto;
-  max-width: 540px;
+  width: 100%;
   font-size: 16px;
   line-height: 24px;
+}
+
+@media (max-width: 1920px) {
+  .form__text p {
+    width: 540px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .form__text p {
+    margin: 65px auto 0 auto;
+  }
+}
+
+@media (max-width: 878px) {
+  .form__text p {
+    margin: 40px auto 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .form__text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__text p {
+    margin: 20px auto 0 auto;
+    line-height: 20px;
+  }
 }
 
 .name__tel__form {
@@ -167,11 +453,39 @@ body {
   gap: 30px;
 }
 
+@media (max-width: 1024px) {
+  .name__tel__form {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 878px) {
+  .name__tel__form {
+    width: 475px;
+    margin: 60px 0 0 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .name__tel__form {
+    width: 100%;
+  }
+}
+
 .username__container,
 .tel__container {
   min-width: 255px;
   border-bottom: 1px solid var(--color-white-main);
   text-align: left;
+}
+
+@media (max-width: 878px) {
+
+  .username__container,
+  .tel__container {
+    min-width: 100px;
+  }
 }
 
 .username,
@@ -182,11 +496,33 @@ body {
   line-height: 32px;
 }
 
+.adress__submit {
+  width: 100%;
+}
+
+@media (max-width: 1920px) {
+  .adress__submit {
+    width: 540px;
+  }
+}
+
+@media (max-width: 878px) {
+  .adress__submit {
+    width: 475px;
+  }
+}
+
+@media (max-width: 640px) {
+  .adress__submit {
+    width: 100%;
+  }
+}
+
 .adress {
+  width: 100%;
   margin-top: 30px;
   background: transparent;
   color: var(--color-white-main);
-  width: 540px;
   border-bottom: 1px solid var(--color-white-main);
   font-size: 13px;
   line-height: 32px;
@@ -201,4 +537,16 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   padding: 15px 212px;
+}
+
+@media (max-width: 878px) {
+  .btn__submit {
+    padding: 15px 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn__submit {
+    padding: 10px 20%;
+  }
 }
