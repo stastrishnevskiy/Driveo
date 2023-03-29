@@ -101,21 +101,33 @@ h6 {
   font-weight: 400;
 }
 
-body {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 footer {
   display: flex;
   flex-direction: column;
   background: var(--color-brown-footer);
-  max-width: 1920px;
   padding: 50px 405px;
   color: var(--color-white-main);
   font-size: 14px;
   line-height: 21px;
   font-family: "Montserrat";
+}
+
+@media (max-width: 1707px) {
+  footer {
+    padding: 50px 10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 50px 7%;
+  }
+}
+
+@media (max-width: 878px) {
+  footer {
+    padding: 40px 4%;
+  }
 }
 
 .navbar__footer {
@@ -125,12 +137,35 @@ footer {
   border-top: 1px solid var(--color-white-main);
   border-bottom: 1px solid var(--color-white-main);
   padding: 20px 0 19px 0px;
+}
 
+@media (max-width: 640px) {
+  .navbar__footer {
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .footer__item {
   color: var(--color-white-main);
   transition-duration: 700ms;
+}
+
+@media (max-width: 640px) {
+  .footer__item {
+    margin: 0 auto;
+    flex: 0 1 33.333%;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__item {
+    margin: 0;
+    flex: 0 1 50%;
+    line-height: 30px;
+  }
 }
 
 .footer__item:hover {
@@ -140,9 +175,21 @@ footer {
 
 .contacts__footer {
   display: flex;
-  flex-wrap: wrap;
   font-weight: 600;
   border-bottom: 1px solid var(--color-white-main);
+}
+
+@media (max-width: 1707px) {
+  .contacts__footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts__footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 
 .boutique {
@@ -158,12 +205,62 @@ footer {
   padding: 19px 64px 20px 58px;
 }
 
+@media (max-width: 1707px) {
+
+  .boutique,
+  .number,
+  .social {
+    padding: 19px 6%;
+    justify-content: space-around;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1440px) {
+
+  .boutique,
+  .number,
+  .social {
+    padding: 19px 3%;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 878px) {
+
+  .boutique,
+  .number,
+  .social {
+    padding: 15px 1%;
+    justify-content: space-around;
+  }
+}
+
 .boutique,
 .number,
 .social {
   border-right: 1px solid var(--color-white-main);
 }
 
+@media (max-width: 640px) {
+
+  .boutique {
+    padding: 10px 1%;
+    flex: 0 1 100%;
+    border-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .number,
+  .social,
+  .web {
+    padding: 10px 1%;
+    flex: 0 1 50%;
+    border-right: 0;
+  }
+}
 
 .btn__youtube,
 .btn__vk,
@@ -185,8 +282,37 @@ footer {
   max-width: 10px;
 }
 
+@media (max-width: 878px) {
+
+  .btn__youtube img,
+  .btn__vk img {
+    margin-right: 20px;
+  }
+}
+
 .web {
   padding: 19px 91px 20px 58px;
+}
+
+@media (max-width: 1707px) {
+
+  .web {
+    padding: 19px 7%;
+  }
+}
+
+@media (max-width: 1440px) {
+
+  .web {
+    padding: 19px 3%;
+  }
+}
+
+@media (max-width: 878px) {
+
+  .web {
+    padding: 19px 1%;
+  }
 }
 
 .web a {
